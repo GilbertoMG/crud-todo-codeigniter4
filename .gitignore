@@ -125,3 +125,8 @@ nb-configuration.xml
 /phpunit*.xml
 /.phpunit.*.cache
 
+#eclipse idea
+.settings
+.project
+.buildpath
+

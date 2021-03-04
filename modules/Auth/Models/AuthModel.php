@@ -1,5 +1,4 @@
 <?php
-
 namespace Modules\Auth\Models;
 
 use CodeIgniter\Model;
@@ -9,7 +8,6 @@ class AuthModel extends Model
 
     public function chkLogin($data)
     {
-		
         $senha = $data['senha'];
 
         $query = $this->query("SELECT id, nome,email,grupo_id,senha,status FROM usuarios WHERE (login = " . $this->escape($data['login']) . ")");
@@ -21,5 +19,4 @@ class AuthModel extends Model
 
         return false;
     }
-
 }
