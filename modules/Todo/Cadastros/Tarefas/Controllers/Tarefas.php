@@ -38,8 +38,7 @@ class Tarefas extends BaseController
 		
 	}
 	
-	public function editar($id){
-		
+	public function editar($id){		
 		$this->data['results'] = $this->tarefasModel->find($this->setInt($id));
 		return view('Modules\Todo\Cadastros\Tarefas\Views\index',$this->data);
 	}
