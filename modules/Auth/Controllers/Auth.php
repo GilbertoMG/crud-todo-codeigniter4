@@ -52,7 +52,8 @@ class Auth extends \CodeIgniter\Controller
                     'userData' => [
                         'nome' => $auth->nome,
                         'id' => (int) $auth->id,
-                        'isAdmin' => $auth->grupo_id == 1 ? true : false,
+                        //'isAdmin' => $auth->grupo_id == 1 ? true : false,
+                        'isAdmin' => $auth->grupo_id === 1,
                         'grupo_id' => (int) $auth->grupo_id
                     ]
                 ]);
